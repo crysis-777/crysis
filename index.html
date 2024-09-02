@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crysis</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <main>
+        <img src="src/img/cat.png" class="cat" data-aos="fade-left" data-aos-duration="1500" alt="cat">
+        <h1 data-aos="fade-left" data-aos-duration="1500">Crysis</h1>
+        <p data-aos="fade-left" data-aos-duration="1500">The plague is coming, be prepared.</p>
+        <div class="buttons">
+            <a href="https://pastebin.com/Hgi41xBQ" target="_blank">
+                <button type="button" class="button" data-aos="fade-left" data-aos-duration="1800">
+                    PGP Key
+                </button>
+            </a>
+            <a href="https://iris.to/crysis777" target="_blank">
+                <button type="button" class="button"
+                    data-aos="fade-left" data-aos-duration="2100">
+                    Nostr
+                </button>
+            </a>
+            <a href="mailto:jesuscrysis777@proton.me" target="_blank">
+                <button type="button" class="button" data-aos="fade-left" data-aos-duration="2400">
+                E-mail
+                </button>
+            </a>
+        </div>
+        <img src="src/img/wallet.jpg" class="wallet" data-aos="fade-left" data-aos-duration="2100">
+
+        <audio id="music" autoplay>
+            <source src="src/mp3/src/mp3/takeMeToTheSun.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+
+    </main>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!--========Volum music===========-->
+    <script>
+        var musica = document.getElementById("music");
+        musica.volume = 0.2; // Define o volume para 20%
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+/* Set body and HTML to take full viewport and center content */
+body, html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Main container taking full viewport */
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cat {
+  width: 12vw;
+  border-radius: 100%;
+}
+
+main p::after {
+  content: '|';
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink .85s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.buttons {
+  gap: 12vw;
+}
+
+.button {
+  width: 12vw;
+  height: 8vh;
+  margin: 1vw;
+  border: 2px solid #fff;
+  border-radius: 0.6em;
+  cursor: pointer;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.wallet {
+  width: 12vw;
+  border-radius: 8%;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    justify-content: start;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+
+  .cat {
+    margin-top: 15vh;
+    width: 30vw;
+  }
+
+  .button {
+    width: 28vw;
+    height: 6vh;
+    margin-left: 3vw;
+  }
+
+  .wallet {
+    width: 50vw;
+    margin-top: 5vh;
+  }
+}
