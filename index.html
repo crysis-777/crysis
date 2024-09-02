@@ -38,21 +38,19 @@
         <img src="src/img/wallet.jpg" class="wallet" data-aos="fade-left" data-aos-duration="2100">
 
         <audio id="music" autoplay>
-            <source src="src/mp3/src/mp3/takeMeToTheSun.mp3" type="audio/mpeg">
+            <source src="src\mp3\src\mp3\takeMeToTheSun.mp3" type="audio/mpeg">
             Seu navegador não suporta o elemento de áudio.
         </audio>
-
+        
+        <script>
+            var musica = document.getElementById("music");
+            musica.volume = 0.2; // Define o volume para 20%
+        </script>
     </main>
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
-
-    <!--========Volum music===========-->
-    <script>
-        var musica = document.getElementById("music");
-        musica.volume = 0.2; // Define o volume para 20%
     </script>
 </body>
 

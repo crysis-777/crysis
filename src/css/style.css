@@ -59,6 +59,7 @@ main p::after {
   text-decoration: none;
   background-color: #000;
   transition: 0.5s;
+  color: #fff;
 }
 
 button a {
@@ -79,6 +80,7 @@ button a {
 @media only screen and (max-width: 600px) {
   main {
     justify-content: start;
+    color:#fff
   }
 
   p {
@@ -94,6 +96,7 @@ button a {
     width: 28vw;
     height: 6vh;
     margin-left: 3vw;
+    color:#fff
   }
 
   .wallet {
